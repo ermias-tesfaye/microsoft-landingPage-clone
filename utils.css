@@ -1,0 +1,92 @@
+.container {
+  max-width: 1200px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 0 1rem; */
+}
+
+.btn {
+  color: white;
+  background-color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+.chevron {
+  transition: transform 0.4s ease-in-out;
+}
+
+.btn:hover .chevron,
+.card-link:hover .chevron {
+  transform: translateX(10px);
+}
+
+.cards {
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+
+  footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .xbox p {
+    display: block;
+    margin-bottom: 2rem;
+    max-width: 40ch;
+    line-height: 1.5;
+  }
+
+  .main-menu,
+  .action {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .main-menu li a {
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s; /* Specify the property and duration */
+  }
+
+  .main-menu li a:hover {
+    color: #43cda1;
+  }
+
+  .main-menu {
+    margin-left: 1.5rem;
+  }
+
+  .open {
+    display: none;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  footer .container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}

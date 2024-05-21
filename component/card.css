@@ -1,0 +1,150 @@
+.items-cards {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card:nth-child(1),
+  .card:nth-child(3) {
+    animation: card 1s;
+  }
+
+  @keyframes card {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .card:nth-child(2),
+  .card:nth-child(4) {
+    animation: card-even 1s;
+  }
+
+  @-webkit-keyframes card-even {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+  }
+}
+.card__img__container img {
+  width: 100%;
+}
+
+.card__img__container {
+  margin-bottom: 1.5rem;
+}
+
+.card-info h2 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.card-info p {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.card-link {
+  display: flex;
+  align-items: center;
+  color: rgb(67, 67, 137);
+  font-weight: 700;
+}
+
+/* xbox */
+
+.xbox {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 400px;
+  background-image: url('../images/xbox.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem 0 0 1rem;
+  animation: box 1s;
+}
+
+@keyframes box {
+  0% {
+    opacity: 0;
+    transform: translateX(-1000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.xbox p {
+  display: none;
+}
+
+.xbox h3 {
+  margin-bottom: 1rem;
+}
+
+/* carbon */
+.carbon {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 400px;
+  background-image: url('../images/carbon.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+  animation: carbon 1s;
+}
+
+@keyframes carbon {
+  0% {
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.carbon p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: 40ch;
+}
+
+/* social */
+.social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.social img {
+  transition: transform 0.3s;
+}
+
+.social img:hover {
+  transform: scale(1.2);
+}

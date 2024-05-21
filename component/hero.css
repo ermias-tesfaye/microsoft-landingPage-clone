@@ -1,0 +1,33 @@
+.hero {
+  background-image: url('../images/showcase.jpg');
+  text-align: center;
+  padding: 200px 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: hero 1s;
+}
+
+
+.hero-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 65%;
+  left: 50%;
+}
+
+h1 {
+  font-size: 1.625rem;
+}
+
+.hero-text p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}

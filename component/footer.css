@@ -1,0 +1,38 @@
+footer {
+  background-color: #f2f2f2;
+  padding-top: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer {
+  margin-bottom: 2rem;
+}
+
+footer h4 {
+  margin-bottom: 1rem;
+  font-size: 15px;
+}
+
+footer ul li {
+  margin-bottom: 0.6rem;
+}
+
+footer li a {
+  color: black;
+  font-size: 13px;
+}
+
+footer li a:hover {
+  text-decoration: underline;
+}
+
+
+ footer .container {
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
